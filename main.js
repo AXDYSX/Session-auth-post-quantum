@@ -72,3 +72,17 @@ async function createSession(userId) {
     
     return { sessionId, authToken };
 }
+
+
+/*
+1ère étape :
+Page web. Backend qui créé un cookie contenant un token d'authentification lorsque l'utilisateur se connecte, 1ère version algo pré-quantique qui créée le token, 
+2ème version algo post-quantique. Le but est de faire un benchmark afin de voir le temps supplémentaire afin d'obtenir le cookie d'un algo à un autre.
+
+2ème étape : 
+Lorsque la personne se déconnecte puis se reconnecte, refaire un benchmark du temps nécessaire à la reconnexion.
+
+
+Support: Pour tester le fonctionnement au préalable, tout sera fait en localhost puis lorsque tout est OK, configuration d'une VM avec un serveur Apache 
+(Windows/Linux osef) et ensuite benchmark via un wireshark pour voir la durée entre envoi et réception des données.
+*/
